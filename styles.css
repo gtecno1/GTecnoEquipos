@@ -1,0 +1,377 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;	
+}
+@font-face {
+font-family: 'SEGA LOGO FONT';
+font-style: normal;
+font-weight: normal;
+src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+}
+@font-face {
+font-family: 'ARLRDBD';
+font-style: normal;
+font-weight: normal;
+src: local('ARLRDBD'), url('ARLRDBD.woff') format('woff');
+}
+body{
+	background:white;
+}
+header{
+	width:100%;
+	background: #F9F9F9;
+}
+#btn-menu{
+	 display:none;
+ }
+ header > label{
+	margin-left:94%; 
+	display: none;
+	width:46px;
+	background-image:url(b.png);
+	background-repeat: no-repeat;
+	padding:17px;
+		 
+ }
+ header >label:hover{
+	background-image:url(b2.png);
+	cursor:pointer;	
+}
+
+.menu{
+	margin:0;
+	list-style:none;	
+	padding:0;
+	display:flex;
+}
+.menu > li >a{
+	display:block;
+	padding: 19px 15px;
+	color:#020202;
+	font-family:"ARLRDBD";
+	font-size:18px;
+	text-decoration:none;
+}
+.menu li:hover{
+	background: rgba(0,0,0,0.6);	
+}
+.menu a:hover{
+	color:white;	
+}
+li{
+	text-align:center;
+	flex-grow:1;
+	background:#F9F9F9;
+}
+
+
+
+.texto1{	
+    margin-top:115px;
+	color: white;	 
+	font-family: "SEGA LOGO FONT";
+	font-size:60px;	
+    -moz-user-select: none; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+     user-select: none; 	
+}
+.texto1 > .te1{	
+   font-family: "ARLRDBD";		
+}
+.texto1 > .te2{	
+   font-family: "ARLRDBD";		
+}
+
+.banner{
+	text-align:center;
+	width: auto;
+	height:310px;
+	border: 1px solid;
+	border-color: white;
+	margin-top: 0px;
+	background-size: 100% 100%;
+	animation: banner 15s infinite;
+}
+@keyFrames banner{
+	
+0%, 50%{
+	text-shadow: 2px 2px 2px black;
+		background-image: url(5.jpg);
+		opacity: 1;
+	}
+
+		51%, 100%{
+       text-shadow: 2px 2px 6px white;
+	  background-image: url(1.jpg);
+	  opacity: 1;
+	}
+
+	}
+		
+.objetivo{
+	top: 10px;
+	border-bottom: 30px solid #4D4D4D;
+	text-align:center;
+	font-family:"ARLRDBD";
+	width: auto;
+	height:200px;	
+	background: white;
+	-moz-user-select: none; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+     user-select: none; 
+}
+
+.titu{
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size: 40px;
+}
+.parrafo{	
+	font-size: 31px;
+}
+
+.equipo1{
+	
+	float:left;
+	width: 50%;
+	height:700px;
+	background:#0066CC;
+	background-size: 261px 518px;
+	background-image: url(2.png);
+	background-repeat: no-repeat;
+	background-position: 50% 110px;
+	
+	
+}
+.equipo2{
+	float:right;
+	width: 50%;
+	height:700px;
+	background:#0033CC;
+	background-size: 490px 329px;
+	background-image: url(3.png);
+	background-repeat: no-repeat;
+	background-position: 50% 290px;	
+}
+
+h2{
+	padding-top:10px;
+	color:#FFFFFF;
+	padding-top: 20px;
+	font-size:45px;
+	text-align: center;
+	font-family:"ARLRDBD";
+	margin-left:0px;
+    -moz-user-select: none; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+     user-select: none; 	
+	
+}
+
+
+ 
+ .mapa1{
+	 float:right;
+	padding:10px;
+	width:100%;
+	height:600px;
+	background: #003399;
+	padding:10px;
+	text-align:center;
+	
+}
+.mapa2{
+	
+	border-radius:15px;
+}
+
+#megus{
+	
+	position:absolute;
+	float:left;
+	margin-left:64px;
+	background:#0033CC;
+	border-radius: 15px;
+	width:97px;
+	height:120px;
+	padding-left:0px;
+	padding-top:20px;
+	margin-top:110px;
+	
+	
+	
+}
+.meguti{
+	font-family:"SEGA LOGO FONT";
+	font-size:22px;
+	margin-bottom:20px;
+	
+}
+.meguti2{
+	font-family:"ARLRDBD";
+}
+
+#pie1{
+	float:left;
+	width:100%; 
+	height:30px;
+	font-size: 17px; 	
+    font-family: "tahoma";
+	color:white;
+	text-align: center;
+	border: 1px solid #4D4D4D;
+	background-color: #4D4D4D;
+		
+}
+.da{
+	color:white;
+	text-decoration:none;
+}
+
+
+@media (max-width: 950px) {
+	#megus{
+	margin-left:40px;	
+	}
+	
+	
+	
+}
+@media (max-width: 900px) {
+	
+	header >label{
+	display:block;
+}
+
+.navegacio{
+	display:none;
+	position:absolute;
+	margin-left:30%;
+	width:70%;		
+}
+.menu{
+	flex-direction: column;
+}
+
+#btn-menu:checked ~ .navegacio{
+	display:block;
+    position:absolute;
+   z-index: 3;
+}
+.texto1{
+	font-size:45px;			
+}
+
+.titu{	
+	font-size: 30px;
+}
+.parrafo{	
+	font-size: 20px;
+}
+h2{
+		font-size:30px;		
+}
+.equipo1{
+	background-size: 261px 490px;	
+}
+.equipo2{	
+	background-size: 400px 300px;	
+}
+
+
+.mapa2{
+	width: 450px;	
+}
+}
+
+@media (max-width: 770px) {
+	#megus{
+	margin-left:10px;	
+	}
+@media (max-width: 700px) {
+	
+
+
+.texto1{
+	font-size:31px;			
+}
+
+.titu{	
+	font-size: 25px;
+}
+.parrafo{	
+	font-size: 18px;
+}
+h2{
+		font-size:25px;
+		
+}
+.equipo1{
+	background-size: 201px 430px;	
+}
+.equipo2{	
+	background-size: 340px 240px;	
+}
+.mapa2{
+	width: 350px;
+	
+}
+
+}
+@media (max-width: 600px) {
+	#megus{
+	margin-left:5px;
+
+
+	}
+	
+	
+}
+}
+	
+@media (max-width: 500px) {
+	
+
+
+.texto1{
+	font-size:25px;
+			
+}
+
+.titu{	
+	font-size: 20px;
+}
+.parrafo{	
+	font-size: 15px;
+}
+h2{
+		font-size:20px;
+		
+}
+.equipo1{
+	background-size: 131px 335px;	
+}
+.equipo2{	
+	background-size: 250px 150px;	
+}
+.mapa2{
+	width: 210px;
+	
+}
+
+}
+
+
+
+
+
+
+
+			
